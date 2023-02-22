@@ -1,0 +1,19 @@
+[package]
+name = "yara-x-cbind"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true
+readme.workspace = true
+license.workspace = true
+homepage.workspace = true
+
+[lib]
+name = "yara_x_cbind"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+yara-x = { workspace = true }
+
+[build-dependencies]
+cbindgen = "0.24.3"

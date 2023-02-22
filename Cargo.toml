@@ -10,6 +10,7 @@ license = "MIT"
 [workspace]
 members = [
     "yara-x",
+    "yara-x-cbind",
     "yara-x-cli",
     "yara-x-fmt",
     "yara-x-macros",
