@@ -109,6 +109,9 @@ macro_rules! pattern_false {
 
 #[test]
 fn wasm_exports() {
+    for e in wasm::WASM_EXPORTS.iter() {
+        println!("{}", e.mangled_name);
+    }
     assert_eq!(wasm::WASM_EXPORTS.len(), 69);
 }
 
