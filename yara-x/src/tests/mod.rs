@@ -1,4 +1,5 @@
 /*! End-to-end tests.*/
+use crate::wasm;
 use pretty_assertions::assert_eq;
 
 macro_rules! test_condition {
@@ -104,6 +105,11 @@ macro_rules! pattern_false {
             $data
         );
     }};
+}
+
+#[test]
+fn wasm_exports() {
+    assert_eq!(wasm::WASM_EXPORTS.len(), 69);
 }
 
 #[test]
